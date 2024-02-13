@@ -1,0 +1,18 @@
+[features]
+seeds = true
+skip-lint = false
+[programs.localnet]
+growth = "97d8t22JenPAwR85PZEXvc4gkvtAMZR9Ct7xuY11a2X8"
+[programs.devnet]
+growth = "97d8t22JenPAwR85PZEXvc4gkvtAMZR9Ct7xuY11a2X8"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+# cluster = "https://rpc.helius.xyz/?api-key=03ed26a3-263f-44d2-b006-b058f26a9a71"
+cluster = "localnet"
+wallet = "/home/saber/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
